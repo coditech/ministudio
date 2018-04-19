@@ -1,6 +1,7 @@
 import React from 'react'
+import './Section.css'
 
-const Section = ({ children, color, src }) => {
+const Section = ({ children, color, src, ...rest }) => {
     const style = ( src
     ? { backgroundImage:`url("${src}")`}
     : ( color
@@ -9,7 +10,7 @@ const Section = ({ children, color, src }) => {
       )
     )
     return (
-      <section className="main" style={style}>
+      <section style={style} {...rest}>
         { children }
       </section>
     )
