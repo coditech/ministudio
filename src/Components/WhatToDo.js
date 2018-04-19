@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'picnic/picnic.min.css';
 import './App.css'
 import Square from './Square'
 import Section from './Section'
