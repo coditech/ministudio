@@ -12,18 +12,17 @@ class Video extends Component {
         }
     }
     
-    Relaod = () =>{
-      window.location="https://www.youtube.com/channel/UCOwyzWourCke41irmVcEtCQ/videos"
-    }
+    // Relaod = () =>{
+    //   window.location="https://www.youtube.com/channel/UCOwyzWourCke41irmVcEtCQ/videos"
+    // }
     render () {
         return (
           <div>
-            <video className="background-video" loop autoPlay muted >
-                <source src={this.state.videoURL} type="video/mp4" />
+            <video  className="background-video" loop autoPlay muted >
+                <source  src={this.state.videoURL} type="video/mp4" />
                </video>
-                  <div className = "divbtn" onClick = {this.Relaod}>Watch More</div>
-                     <div>
-                         </div>
+                     <div className = "videobtn" >Watch More</div>
+
                               </div>
                               )
                             }
