@@ -1,16 +1,6 @@
-section{
-  width:100%;
-  padding:3em;
-}
 .wrapper{
   max-width:1000px;
   margin:0 auto;
-}
-
-.title{
-  width:100%;
-  text-align: center;
-  color:white;
 }
 
 .square{
