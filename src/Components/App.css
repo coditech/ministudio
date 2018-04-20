@@ -109,10 +109,8 @@
 .videobtn:hover{
   background-color: blue;
   transition: background-color 0.5s;
-  
-  
-=======
+   
+}
 .square a:hover{
   color:#FAC3C3;
->>>>>>> 3ee28ef93d0da6b216113f4be0ba0829b89d00f6
 }
