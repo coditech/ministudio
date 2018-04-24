@@ -1,5 +1,7 @@
+
 import React, { Component } from 'react';
 import'./Latestvideo.css'
+import'./App.css'
 class LatestVideos extends React.Component {
   constructor() {
     super();
