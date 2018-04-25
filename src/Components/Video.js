@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Chat from "./Chat";
+
 import './Video.css'
 
 class Video extends Component {
@@ -11,12 +11,9 @@ class Video extends Component {
         }
     }
     
-    // Relaod = () =>{
-    //   window.location="https://www.youtube.com/channel/UCOwyzWourCke41irmVcEtCQ/videos"
-    // }
     render () {
         return (
-          <div className="video-size">
+          <div className="background-video">
             <video  loop autoPlay muted >
                 <source  src={this.state.videoURL} type="video/mp4" />
                </video>

@@ -41,24 +41,7 @@
 
 /* latest video  */
 
-.videobtn{
-  width: 15%;
-  padding: 12px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color:red;
-  cursor: pointer;
-  position: absolute;
-  top:1280px;
-  left:560px;
-  text-align: center;
-  color:white
-}
-.videobtn:hover{
-  background-color: blue;
-  transition: background-color 0.5s;
-   
-}
+
 .square a:hover{
   color:#FAC3C3;
 }
