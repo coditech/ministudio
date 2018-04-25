@@ -7,7 +7,12 @@
     "picnic": "^6.5.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+<<<<<<< HEAD
     "react-masonry-component": "^6.2.0",
+=======
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+>>>>>>> 1c0c438a86269f9a6f7ec0deeffb554440ff1641
     "react-scripts": "1.1.4"
   },
   "scripts": {
