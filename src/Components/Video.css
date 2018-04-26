@@ -3,21 +3,15 @@
     bottom: 0;
     min-width: 100%; 
     min-height: 100%;
-    width: auto; 
-    height: auto; 
-    
     background-size: cover;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
+    height: 700px;
   
   }
 
-  .video-size video{
-    width:100%;
-    height:100%
-  }
-
+  
   .videobtn{
     width: 200px;
     padding: 12px;
@@ -26,7 +20,7 @@
     background-color:red;
     cursor: pointer;
     position: absolute;
-    top:1000px;
+    top:575px;
     left:50%;
     text-align: center;
     color:white;
