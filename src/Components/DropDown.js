@@ -2,12 +2,17 @@ import React from 'react'
 import './DropDown.css'
 
 export default class DropDown extends React.Component{
-    state = {open:false}
-    toggle = () => this.setState({open:!this.state.open})
+    state = {open:this.props.isOpen}
+    toggle = () =>{  
+        this.setState({open:!this.state.open})     
+    }
     render(){
-        const { title, children } = this.props
-        const { open } = this.state
-        const className = open ? 'open' : 'closed'
+        const { title, children, isOpen } = this.props
+        const open = this.state.open 
+        var className = 'close';            
+        if (open)
+             className = 'open';
+        console.log('classname: ' + className)             
         return (
             <div className={'dropdown dropdown-'+className}>
                 <div className="dropdown-header" onClick={this.toggle}>
@@ -17,6 +22,7 @@ export default class DropDown extends React.Component{
                     {children}
                 </div>
             </div>
+           
         )
     }
 }
