@@ -1,21 +1,15 @@
 import React from 'react'
 import './DropDown.css'
 
-export default class DropDown extends React.Component{
-    state = {open:this.props.isOpen}
-    toggle = () =>{  
-        this.setState({open:!this.state.open})     
-    }
-    render(){
-        const { title, children, isOpen } = this.props
-        const open = this.state.open 
-        var className = 'close';            
-        if (open)
-             className = 'open';
-        console.log('classname: ' + className)             
+const DropDown = ({title, children, isOpen, change}) => {
+   
+    
+            let openclose = isOpen ? 'open' : 'close';
+            
+       
         return (
-            <div className={'dropdown dropdown-'+className}>
-                <div className="dropdown-header" onClick={this.toggle}>
+            <div className={'dropdown dropdown-'+openclose}>
+                <div className="dropdown-header" onClick={change}>
                     <a>{title}</a>
                 </div>
                 <div className="dropdown-content">
@@ -25,4 +19,4 @@ export default class DropDown extends React.Component{
            
         )
     }
-}
+    export default DropDown
