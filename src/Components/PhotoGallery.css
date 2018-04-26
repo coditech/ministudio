@@ -1,0 +1,25 @@
+.PhotoSection{
+    background-color: lightgray;
+    width:100%;
+    height:500px ;
+}
+.photo{
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    transition: all .3s ease-out;
+
+}
+
+img.photos{
+    position: relative ;
+    width: auto ;
+    height: auto;
+}
+.photo{
+    cursor: pointer;
+}
+.photo:hover{
+    opacity:0.1;
+    margin-bottom:9px;
+}

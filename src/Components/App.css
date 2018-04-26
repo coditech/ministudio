@@ -29,88 +29,20 @@
 }
 
 
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
 
-.background-video{
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto; 
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
-  box-sizing: border-box;
-  
 
-}
-.divbtn{
-  width: 15%;
-  padding: 12px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color:red;
-  cursor: pointer;
-  position: absolute;
-  top:600px;
-  left:560px;
-  text-align: center;
-  color:white
-  
-}
-.divbtn:hover{
-  background-color: blue;
-  transition: background-color 0.5s;
-  
-  
-}
 
 
 /* latest video  */
-.first-video {
-  /* margin-left: 200px; */
-  margin-top: 15px;
-  border: 2px solid green;
-  width: 99%;
-  height: 500px;
-  background: yellow;
-}
-.second{
-  border : 2px solid green ;
-  margin-left:20px;
-  
-}
-.h1{
-  font-family: 'Ropa Sans', sans-serif;
-  letter-spacing: 0.15em;
-  color: #3588CC;
-  margin-bottom: 50px;
-  
-}
 
-.videobtn{
-  width: 15%;
-  padding: 12px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color:red;
-  cursor: pointer;
-  position: absolute;
-  top:1280px;
-  left:560px;
-  text-align: center;
-  color:white
-}
-.videobtn:hover{
-  background-color: blue;
-  transition: background-color 0.5s;
-   
-}
+
 .square a:hover{
   color:#FAC3C3;
 }
+

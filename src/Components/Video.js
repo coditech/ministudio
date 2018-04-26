@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
-// import Chat from "./Chat";
-import './App.css'
+
+import './Video.css'
 
 class Video extends Component {
     constructor (props) {
         super(props);
 
         this.state = {
-            videoURL: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'
+            videoURL: 'https://video.wixstatic.com/video/e04112_0fc47f3f1bd04f289435361bff3e55b8/1080p/mp4/file.mp4'
         }
     }
     
-    // Relaod = () =>{
-    //   window.location="https://www.youtube.com/channel/UCOwyzWourCke41irmVcEtCQ/videos"
-    // }
     render () {
         return (
-          <div>
-            <video  className="background-video" loop autoPlay muted >
+          <div className="background-video">
+            <video  loop autoPlay muted >
                 <source  src={this.state.videoURL} type="video/mp4" />
                </video>
-                     <div className = "videobtn" >Watch More</div>
+                     <div className = "videobtn" >Watch More </div>
 
                               </div>
                               )
