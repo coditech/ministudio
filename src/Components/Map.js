@@ -4,11 +4,11 @@ class Map extends Component {
    render() {
    const GoogleMapExample = withGoogleMap(props => (
       <GoogleMap
-        defaultCenter = { { lat: 	33.894293, lng: 35.489236 } }
+        defaultCenter = { { lat: 	33.8964022, lng: 35.5281077 } }
         defaultZoom = { 14 }
       >
       <Marker
-      position={{ lat: 	33.894293, lng: 35.489236 }}
+      position={{ lat: 33.8964022, lng: 35.5281077 }}
     />
       </GoogleMap>
    ));
