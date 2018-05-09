@@ -6,11 +6,11 @@ import DropDown from './DropDown'
 class Navbar extends React.Component  {
     state = {servicesisOpen: false, videosisOpen: false}
     services = () => {
-        this.setState({servicesisOpen:true, videosisOpen:false})
+        this.setState({servicesisOpen:!this.state.servicesisOpen, videosisOpen:false})
         console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     videos = () => {
-        this.setState({videosisOpen:true, servicesisOpen:false})
+        this.setState({videosisOpen:!this.state.videosisOpen, servicesisOpen:false})
         console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     render(){
@@ -26,14 +26,14 @@ class Navbar extends React.Component  {
 
         <div className="menu">
             <a href="#" className="new pseudo icon-picture">home</a>
-            <DropDown className="services-menu" title="services" isOpen={this.state.servicesisOpen}>
+            <DropDown className="services-menu" title="services" isOpen={this.state.servicesisOpen} change={this.services} >
                 <a className="pseudo icon-picture">Video Production</a>
                 <a className="pseudo icon-picture">BIRTHDAYS</a>
                 <a className="pseudo icon-picture">EVENTS</a>
                 <a className="pseudo icon-picture">Live Shows</a>
                 <a className="pseudo icon-picture">Summer Camp</a>
             </DropDown>
-            <DropDown className="videos-menu" title="videos" isOpen={this.state.videosisOpen}>
+            <DropDown className="videos-menu" title="videos" isOpen={this.state.videosisOpen} change={this.videos}>
                 <a className="pseudo icon-picture">DIY</a>
                 <a className="pseudo icon-picture">ZUMBA</a>
             </DropDown>
