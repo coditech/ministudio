@@ -48,7 +48,7 @@
   @media screen and (max-width: 800px) {
     .divbtn{
       position: absolute;
-       top : 750px;
+       top : 790px;
        left:50%;
        margin-left:-75px;
        width:150px;
@@ -60,7 +60,7 @@
   @media screen and (max-width: 800px) {
     .first{
       position: absolute;
-      top : 12%;
+      top : 15%;
       left:50%;
       margin-left:-150px;
       width:300px;
@@ -71,7 +71,7 @@
   @media screen and (max-width: 800px) {
     .second{
       position: absolute;
-      top : 53%;
+      top : 55%;
       left:50%;
       margin-left:-150px;
       width:300px;  
@@ -80,7 +80,7 @@
 
   @media screen and (max-width: 800px) {
     .videos-container{
-      height:810px
+      height:850px
     }
   }
 
