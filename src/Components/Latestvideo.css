@@ -45,10 +45,10 @@
     transition: background-color 0.5s;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .divbtn{
       position: absolute;
-       top : 790px;
+       top : 750px;
        left:50%;
        margin-left:-75px;
        width:150px;
@@ -57,10 +57,10 @@
   }
 
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .first{
       position: absolute;
-      top : 15%;
+      top : 12%;
       left:50%;
       margin-left:-150px;
       width:300px;
@@ -68,19 +68,19 @@
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .second{
       position: absolute;
-      top : 55%;
+      top : 53%;
       left:50%;
       margin-left:-150px;
       width:300px;  
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .videos-container{
-      height: 850px;
+      height:810px
     }
   }
 

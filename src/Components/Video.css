@@ -33,12 +33,12 @@
     transition: background-color 0.5s;
   }
  
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .background-video{
         height:250px
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 800px) {
   .videobtn{
     position: absolute;
      top : 80%;
