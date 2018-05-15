@@ -5,19 +5,18 @@ import DropDown from './DropDown'
 
 class Navbar extends React.Component  {
     state = {servicesisOpen: false, videosisOpen: false}
+
     services = () => {
         this.setState({servicesisOpen:!this.state.servicesisOpen, videosisOpen:false})
-        console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     videos = () => {
         this.setState({videosisOpen:!this.state.videosisOpen, servicesisOpen:false})
-        console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     render(){
         
         return (
     <div className="nav"> 
-        <img className="logo" alt="Ministudio logo" src={require("../logo.png")} />
+        <img className="logo" alt="Ministudio logo" src={require("../images/logo.png")} />
         <nav className="navbar">
         
         {/* responsive */}
@@ -25,7 +24,7 @@ class Navbar extends React.Component  {
         <label htmlFor="bmenub" className="burger pseudo button">&#8801;</label>
 
         <div className="menu">
-            <a href="#" className="new pseudo icon-picture">home</a>
+            <a href="home" className="new pseudo icon-picture">home</a>
             <DropDown className="services-menu" title="services" isOpen={this.state.servicesisOpen} change={this.services} >
                 <a className="pseudo icon-picture">Video Production</a>
                 <a className="pseudo icon-picture">BIRTHDAYS</a>
@@ -38,9 +37,9 @@ class Navbar extends React.Component  {
                 <a className="pseudo icon-picture">ZUMBA</a>
             </DropDown>
             <a href="#" className="new pseudo icon-picture">store</a>
-            <a href="About.js" className="new pseudo icon-picture">about</a>
+            <a href="about" className="new pseudo icon-picture">about</a>
             <a href="#" className="new pseudo icon-picture">contact</a>
-            <a href="#" className="new pseudo icon-picture">blog</a>
+            
 
         </div>
     </nav>
