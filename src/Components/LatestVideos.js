@@ -7,7 +7,7 @@ class LatestVideos extends React.Component {
   }
 render(){
   return(
-<div className = "container"z>
+<div className = "container">
   <div className="videos-container">
   <h1 className = "h1"style={{textAlign:'center'}}>LATEST VIDEOS</h1>
   <div className="twovideos">

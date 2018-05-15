@@ -45,7 +45,7 @@
     transition: background-color 0.5s;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .divbtn{
       position: absolute;
        top : 790px;
@@ -57,7 +57,7 @@
   }
 
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .first{
       position: absolute;
       top : 15%;
@@ -68,7 +68,7 @@
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .second{
       position: absolute;
       top : 55%;
@@ -78,9 +78,9 @@
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 800px) {
     .videos-container{
-      height: 850px;
+      height:850px
     }
   }
 
