@@ -13,8 +13,8 @@ class Video extends Component {
     
     render () {
         return (
-          <div className="background-video">
-            <video  loop autoPlay muted >
+          <div className="videocontainer">
+            <video  className="video" loop autoPlay muted >
                 <source  src={this.state.videoURL} type="video/mp4" />
                </video>
                      <div className = "videobtn" >Watch More </div>
