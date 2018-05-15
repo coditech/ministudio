@@ -5,12 +5,13 @@ import DropDown from './DropDown'
 
 class Navbar extends React.Component  {
     state = {servicesisOpen: false, videosisOpen: false}
-
     services = () => {
         this.setState({servicesisOpen:!this.state.servicesisOpen, videosisOpen:false})
+        console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     videos = () => {
         this.setState({videosisOpen:!this.state.videosisOpen, servicesisOpen:false})
+        console.log(this.state.servicesisOpen + " " + this.state.videosisOpen)
     }
     render(){
         
