@@ -1,12 +1,14 @@
 import React from 'react'
 
-const Square = ({src,title, url}) => {
+const Square = ({src,title,url,className,body}) => {
     const style = ( src
     ? { backgroundImage: `url(${src})` } 
-    : null
+    : null ||
+    className ? {className} : null||
+    body ? {body} : null
     )
     return(
-      <div className="square" style={style}>
+      <div className={body || className} style={style}>
         <div className="square-content">
         { title 
         ? <p>{title}</p>
