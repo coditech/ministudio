@@ -9,6 +9,7 @@ const DropDown = ({title, children, isOpen, change}) => {
        
         return (
             <div className={'dropdown dropdown-'+openclose}>
+            
                 <div className="dropdown-header" onClick={change}>
                     <a>{title}</a>
                 </div>
