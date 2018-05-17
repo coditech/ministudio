@@ -42,12 +42,12 @@ const ContactUs = () => (
         <ContactUsPart>
             <ContactUsTitle text="CONTACT"/>
             <ContactUsContent>
-                <form className="flex full" style={{paddingLeft:60}}>
+                <form className="flex full" style={{paddingLeft:60 , width:'20em' , marginLeft:'7em'}}>
                     <div className="input half-600"><input type="text" name="name" placeholder="Name"/></div>
                     <div className="input half-600"><input type="text" name="email" placeholder="Email"/></div>
                     <div className="input full"><input type="text" name="subject" placeholder="Subject"/></div>
                     <div className="input full"><textarea rows={10} name="message" placeholder="Message"/></div>
-                    <div className="input full"><button className="stack">send</button></div>
+                    <div className="input full"><button class="full half-500 third-800" style={{width:'16em'}}>send</button></div>
                 </form>
             </ContactUsContent>
         </ContactUsPart>
