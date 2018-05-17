@@ -1,7 +1,9 @@
 .PhotoSection{
     background-color: lightgray;
     widows: 1500px;
-    height:500px !important;
+}
+.Photos{
+    margin:0 auto;
 }
 .photo{
     background-position: center center;
