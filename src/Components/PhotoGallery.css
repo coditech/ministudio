@@ -1,9 +1,13 @@
 .PhotoSection{
     background-color: lightgray;
+
     widows: 1500px;
 }
 .Photos{
     margin:0 auto;
+    width:100%;
+    height:500px ;
+
 }
 .photo{
     background-position: center center;
@@ -14,9 +18,9 @@
 }
 
 img.photos{
-    position: relative !important;
-    width: auto !important;
-    height: auto !important;
+    position: relative ;
+    width: auto ;
+    height: auto;
 }
 .photo{
     cursor: pointer;

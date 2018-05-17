@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'
+import './WhatToDo.css'
 import Square from './Square'
 import Section from './Section'
 import Title from './Title'
@@ -10,16 +10,15 @@ class WhatToDo extends Component{
         return(
             <div>
             <Section src="images/waves.jpg">
-                <Title> Latest Videos </Title>
-              <div className="wrapper">
-                <div className="flex three center five-600">
-                  <div><Square title="Production"  url="#"/></div>
-                  <div><Square src='images/pic1.jpg'/></div>
-                  <div><Square title="Entertainment"  url="#"/></div>
-                  <div><Square src='images/pic2.jpg'/></div>
-                  <div><Square title="Live Shows" url="#"/></div>
+                <Title> WHAT WE DO </Title>  
+                <div className="box">
+                    {/* <div className="flex three center five-600"> */}
+                    <div className="square-main"><Square title="Production"  body="square" url="#"/></div>
+                    <div className="square-main"><Square src='images/pic1.jpg' className="image body"/></div>
+                    <div className="square-main"><Square title="Entertainment" body="square" url="#"/></div>
+                    <div className="square-main"><Square src='images/pic2.jpg' className="image body"/></div>
+                    <div className="square-main"><Square title="Live Shows" body="square" url="#"/></div>
                 </div>
-              </div>
             </Section>
           </div>
         )
