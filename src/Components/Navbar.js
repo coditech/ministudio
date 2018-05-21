@@ -25,7 +25,7 @@ class Navbar extends React.Component  {
         <label htmlFor="bmenub" className="burger pseudo button">&#8801;</label>
 
         <div className="menu">
-            <a href="home" className="new pseudo icon-picture">home</a>
+            <a href="home" className="new pseudo icon-picture">Home</a>
             <DropDown className="services-menu" title="services" isOpen={this.state.servicesisOpen} change={this.services} >
                 <a className="pseudo icon-picture">Video Production</a>
                 <a className="pseudo icon-picture">BIRTHDAYS</a>
@@ -34,11 +34,11 @@ class Navbar extends React.Component  {
                 <a className="pseudo icon-picture">Summer Camp</a>
             </DropDown>
             <DropDown className="videos-menu" title="videos" isOpen={this.state.videosisOpen} change={this.videos}>
-                <a className="pseudo icon-picture">DIY</a>
-                <a className="pseudo icon-picture">ZUMBA</a>
+                <a href="diy"className="pseudo icon-picture">DIY</a>
+                <a href="zumba" className="pseudo icon-picture">ZUMBA</a>
             </DropDown>
             <a href="#" className="new pseudo icon-picture">store</a>
-            <a href="about" className="new pseudo icon-picture">about</a>
+            <a c className="new pseudo icon-picture">about</a>
             <a href="#" className="new pseudo icon-picture">contact</a>
             
 
