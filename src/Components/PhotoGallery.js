@@ -32,14 +32,44 @@ const snap = (num, step) => Math.round(num / step) * step
 class PhotoGallery extends Component {
     state = {
         index:0,
+        showSlider: false, 
+        showDiv: true,
         images:[
-            { loaded:false, src:'images/firewood.png'},
-            { loaded:false, src:'images/ferriswheel.png'},
-            { loaded:false, src:'images/palmtrees.png'},
-            { loaded:false, src:'images/mistyslopes.png'},
-            { loaded:false, src:'images/beachhuts.png'},
-            { loaded:false, src:'images/citycycle.png'},
-            { loaded:false, src:'images/mountainlake.png'},
+            {
+                original: 'images/firewood.png',
+                thumbnail: 'images/firewood.png',
+                src:'images/firewood.png'
+            },
+            {
+                original: 'images/ferriswheel.png',
+                thumbnail: 'images/ferriswheel.png',
+                src: 'images/ferriswheel.png'
+            },
+            {
+                original: 'images/palmtrees.png',
+                thumbnail: 'images/palmtrees.png',
+                src: 'images/palmtrees.png'
+            },
+            {
+                original: 'images/mistyslopes.png',
+                thumbnail: 'images/mistyslopes.png',
+                src: 'images/mistyslopes.png'
+            },
+            // {
+            //     original: 'images/beachhuts.png',
+            //     thumbnail: 'images/beachhuts.png',
+            //     src: 'images/beachhuts.png'
+            // },
+            // {
+            //     original: 'images/citycycle.png',
+            //     thumbnail: 'images/citycycle.png',
+            //     src: 'images/citycycle.png'
+            // },
+            {
+                original: 'images/mountainlake.png',
+                thumbnail: 'images/mountainlake.png',
+                src: 'images/mountainlake.png'
+            }
         ]
     }
     componentDidUpdate(){
@@ -78,20 +108,36 @@ class PhotoGallery extends Component {
     onKeyDown = (evt) => {
         console.log(evt.keyCode)
         if(evt.keyCode === 27 ){
-            this.setState({show:false})
+            this.setState({showSlider:false, showDiv: true})
         }
+    }
+    openSlider(index){
+        this.setState({ index: index, showSlider: true, showDiv: false })
+        var temp = this.state.images[0];
+        this.state.images[0] = this.state.images[index];
+        this.state.images[index] = temp;
     }
     render() {
         return (
             <div>
-                <div tabIndex={0} onKeyDown={this.onKeyDown} style={{zIndex:99999, position:'fixed', top:0, left:0, right:0, bottom:0, background:'red', display:(this.state.show ? 'block' : 'none')}}>
-                  <ImageGallery items={this.state.images} />                          
-                    <div style={{background:'blue', width:50,height:50}} onClick={()=>this.setState({show:false})} />
+                <div tabIndex={this.state.index} 
+                onKeyDown={this.onKeyDown} 
+                style={{position: 'relative', top: 0, left: 0, right: 0, bottom: 0, background:'rgba(0, 0, 0, 0.4)', display:(this.state.showSlider ? 'block' : 'none')}}>
+                    <ImageGallery items={this.state.images} />                          
+                    <div style={{position:'absolute', top:'0', right:'0', background:'Red', width:30,height:30}} onClick={()=>this.setState({showSlider:false, showDiv: true})}>
+                        <div style={{ cursor:'pointer',color:'lightgray', textAlign:'center',fontSize: 20}}>X</div>
+                    </div> 
                 </div>
-                <div className="PhotoSection">
+                <div className="PhotoSection" style={{ display: (this.state.showDiv ? 'block' : 'none')}}>
                     <div ref={(element)=>this.rootElement = element} className="Photos"> 
                         { this.state.images.map( (image, index ) => {
-                            return <Background onClick={()=>this.setState({index,show:true})} key={image.src} loaded={image.loaded} width={image.clampedWidth} height={image.clampedHeight} src={image.src} alt="firewood" />
+                            return <Background onClick={()=>this.openSlider(index)} 
+                            key={image.src} 
+                            loaded={image.loaded} 
+                            width={image.clampedWidth} 
+                            height={image.clampedHeight} 
+                            src={image.src} 
+                            alt={index} />
                         })}   
                     </div>
                 </div>
