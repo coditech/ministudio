@@ -55,6 +55,17 @@ class PhotoGallery extends Component {
                 thumbnail: 'images/mistyslopes.png',
                 src: 'images/mistyslopes.png'
             },
+            {
+                original: 'images/beachhuts.png',
+                thumbnail: 'images/beachhuts.png',
+                src: 'images/beachhuts.png'
+                
+            },
+            {
+                original: 'images/citycycle.png',
+                thumbnail: 'images/citycycle.png',
+                src: 'images/citycycle.png'
+            },
             // {
             //     original: 'images/beachhuts.png',
             //     thumbnail: 'images/beachhuts.png',
