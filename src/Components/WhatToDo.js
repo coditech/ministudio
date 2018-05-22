@@ -11,12 +11,12 @@ class WhatToDo extends Component{
             <div>
             <Section src="images/waves.jpg">
                 <Title> WHAT WE DO </Title>  
-                <div className="box">
+                <div className="box" style={{width:'100%',height:'100%',marginLeft:'0px'}}>
                     {/* <div className="flex three center five-600"> */}
                     <div className="square-main"><Square title="Production"  body="square" url="#"/></div>
-                    <div className="square-main"><Square src='images/pic1.jpg' className="image body"/></div>
+                    <div className="square-main"><Square src='/images/pic1.jpg' className="image body"/></div>
                     <div className="square-main"><Square title="Entertainment" body="square" url="#"/></div>
-                    <div className="square-main"><Square src='images/pic2.jpg' className="image body"/></div>
+                    <div className="square-main"><Square src='/images/pic2.jpg' className="image body"/></div>
                     <div className="square-main"><Square title="Live Shows" body="square" url="#"/></div>
                 </div>
             </Section>
