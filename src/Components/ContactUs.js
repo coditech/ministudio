@@ -2,7 +2,6 @@ import React from 'react';
 import Section from './Section'
 import Title from './Title'
 import './ContactUs.css'
-import '../fontello/css/anas-icons-embedded.css'
 import Map from './Map.js' 
 
 const ContactUsTitle = ({text}) => (
