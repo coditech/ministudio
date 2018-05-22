@@ -29,3 +29,15 @@ img.photos{
     opacity:0.1;
     margin-bottom:9px;
 }
+
+.image-gallery-slide img{
+    height: 500px;
+    width: auto !important;
+}
+ .image-gallery-image{
+    text-align: center;
+    background: lightgray;
+}
+.image-gallery-thumbnails{
+    background: lightgray;
+} 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'picnic/picnic.min.css';
+
 import './App.css';
 import Navbar from './Navbar'
 import Video from './Video'
