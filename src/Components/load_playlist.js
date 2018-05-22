@@ -9,7 +9,7 @@ export const load_playlist = (playlistId) => new Promise((resolve, reject) => {
             console.log('youtube api loaded')
             var request = gapi.client.youtube.playlistItems.list({
                 part: 'snippet',
-                playlistId:"PLM-fy-VblSIQ6C4x-j5dweqdRTlA8UUtD",
+                playlistId,
                 maxResults: 50
             });
     
