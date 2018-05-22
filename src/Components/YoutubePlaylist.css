@@ -1,0 +1,64 @@
+.youtube-container{
+    max-width:960px;
+    margin:0 auto;
+}
+
+.youtube-player{
+    width:100%;
+    position: absolute;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:0 auto;
+}
+
+.youtube-player-container{
+    width:100%;
+    margin:0 auto;
+    height:0;
+    padding-bottom:50%;
+    position: relative;
+}
+
+.youtube-playlist-item{
+    width:10em;
+    padding:1em;
+    margin:1em;
+    overflow:hidden;
+    background: white;
+    border-radius:4px;
+    float:left;
+    height:13em;
+    position: relative;
+    cursor: pointer;
+}
+
+.youtube-playlist-item::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:1em;
+    background:linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
+}
+
+.youtube-playlist-item img{
+    width:100%;
+}
+
+.youtube-item-current{
+    background:teal;
+}
+.youtube-playlist-item:hover{
+    background:blue;
+}
+
+.youtube-playlist-container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    clear:both;
+}

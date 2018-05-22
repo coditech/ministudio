@@ -1,16 +1,11 @@
-.background-video{
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    background-size: cover;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    height: 700px;
-  
-  }
 
+.video {
+width:100%;
+  
+}
+.videocontainer{
+  position: relative;
+}
   
   .videobtn{
     width: 200px;
@@ -34,18 +29,20 @@
     transition: background-color 0.5s;
   }
  
-  @media screen and (max-width: 800px) {
-    .background-video{
-        height:250px
-    }
+  
+@media screen and (max-width:700px) {
+  .video{
+    width: 100%;
+    position: relative;
+  }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1119px) {
   .videobtn{
     position: absolute;
-     top : 80%;
-     left:50%;
-     margin-left:-75px;
-     width:150px;
+    top:50%;
+    left:50%;
+    margin-left:-75px;
+    width:150px;
 
   }
 }
