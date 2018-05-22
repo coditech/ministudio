@@ -5,7 +5,8 @@ h2 {
     font-size: 36px;
     text-align: center;
     color :#000000;
-    font-family: futura-lt-w01-light,sans-serif;
+    font-family: 'Nunito', sans-serif;  
+    text-transform: uppercase;  
     letter-spacing: 0.05em;
 }
 .border{
@@ -17,7 +18,8 @@ p{
     line-height: 1.6em;
     text-align: center;
     color: #000000;
-    font-family: futura-lt-w01-light,sans-serif;
+    font-family: 'Nunito', sans-serif;    
+    
 
 }
 .par{

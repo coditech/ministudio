@@ -8,6 +8,8 @@
 
 .contact-us-title{
     margin-bottom:2em;
+    font-family: 'Abel', sans-serif;    
+    
 }
 
 .contact-us-content{
@@ -27,6 +29,8 @@
 
 .small p{
     margin:.2em 0;
+    font-family:'Abel', sans-serif;    
+    
 }
 
 .social-icon{

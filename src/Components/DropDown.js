@@ -11,7 +11,7 @@ const DropDown = ({title, children, isOpen, change}) => {
             <div className={'dropdown dropdown-'+openclose}>
             
                 <div className="dropdown-header" onClick={change}>
-                    <a>{title}</a>
+                   <span className="plus-sign">&#43;</span> <a>{title}</a>
                 </div>
                 <div className="dropdown-content">
                     {children}
