@@ -1,0 +1,10 @@
+.row{
+    text-align: center;
+}
+svg{
+    width: 5em;
+    height: 5em;
+}
+.container{
+    width: 100%;
+}
