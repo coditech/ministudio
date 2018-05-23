@@ -12,15 +12,15 @@ const Entertainment = () => {
             <Navbar />
             <div className="container">
             <Section>
-                <Grid>
-                    <Row>
-                        <Thumbnail>
-                            <MdCake />
-                            <h1>Entertainment</h1>                            
+                <div class="flex one">
+                    <div>
+                        <article class="card">
+                            <p className="icon"><MdCake /></p>
+                            <h1>Entertainment</h1>
                             <p>Comming Soon...</p>
-                        </Thumbnail>
-                    </Row>
-                </Grid>;
+                        </article>
+                    </div>
+                </div>
             </Section>
             </div>
             <ContactUs />
