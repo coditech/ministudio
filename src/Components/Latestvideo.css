@@ -2,6 +2,15 @@
   background: yellow;
   text-align: center;
 }
+.videos-container h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 2.8em;
+  color: #3588CC;
+  letter-spacing: 7px;
+}
+.divbtn {
+  font-family: 'Abel', sans-serif;
+}
 .twovideos{
   display: flex;
   justify-content: center;

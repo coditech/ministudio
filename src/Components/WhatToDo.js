@@ -10,7 +10,7 @@ class WhatToDo extends Component{
         return(
             <div>
             <Section src="images/waves.jpg">
-                <Title> WHAT WE DO </Title>  
+                <Title className="title"> WHAT WE DO </Title>  
                 <div className="box" style={{width:'100%',height:'100%',marginLeft:'0px'}}>
                     {/* <div className="flex three center five-600"> */}
                     <div className="square-main"><Square title="Production"  body="square" url="/production"/></div>

@@ -7,6 +7,16 @@
     align-items: center;
     justify-content: center;
   }
+  .square p {
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .title {
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 8px;    
+  }
+  
   .image{
       height: 180px;
       width:100%;

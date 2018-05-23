@@ -10,7 +10,7 @@ const DropDown = ({title, children, isOpen, change}) => {
         return (
             <div className={'dropdown dropdown-'+openclose}>
             
-                <div className="dropdown-header" onClick={change}>
+                <div className="dropdown-header" onMouseOver={change} onMouseLeave = {change}>
                    <span className="plus-sign">&#43;</span> <a>{title}</a>
                 </div>
                 <div className="dropdown-content">
