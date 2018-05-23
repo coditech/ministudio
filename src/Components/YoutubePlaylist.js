@@ -34,6 +34,8 @@ export class YoutubePlaylist extends Component {
         const currentVideoUrl = `https://www.youtube.com/embed/${currentVideoId}`
         
         return (
+            <div className="youtube-container1">
+            
             <div className="youtube-container">
                 { this.state.error && <div>{this.state.error}</div>}
                 <div className="youtube-player-container">
@@ -44,14 +46,18 @@ export class YoutubePlaylist extends Component {
                         const current = i === currentIndex
                         const className = `youtube-playlist-item`+(current?' youtube-item-current':'')
                         return (
-                            <div className={className} key={id} id={id} onClick={()=>this.setState({currentIndex:i})}>
+                           
+                           <div className={className} key={id} id={id} onClick={()=>this.setState({currentIndex:i})}>
+                           <div className="box">
                                 <img src={thumbnail} alt={`cover image for ${title}`}/>
-                                <h4>{title}</h4>
+                                </div>
                             </div>
                         )
                     })}
                 </div>
             </div>
+            </div>
+
         )
     }
 }

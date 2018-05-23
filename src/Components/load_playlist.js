@@ -10,7 +10,7 @@ export const load_playlist = (playlistId) => new Promise((resolve, reject) => {
             var request = gapi.client.youtube.playlistItems.list({
                 part: 'snippet',
                 playlistId,
-                maxResults: 50
+                maxResults: 15
             });
     
             const videos = []
