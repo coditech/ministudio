@@ -129,3 +129,9 @@
 }
 }
 
+.pseudo.icon-picture {
+    text-decoration: none;
+}
+.dropdown-header a{
+    text-decoration: none;    
+}
