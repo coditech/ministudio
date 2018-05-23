@@ -17,7 +17,7 @@ class Video extends Component {
             <video  className="video" loop autoPlay muted >
                 <source  src={this.state.videoURL} type="video/mp4" />
                </video>
-                     <div className = "videobtn" >Watch More </div>
+                     <div className = "videobtn" >Watch more </div>
 
                               </div>
                               )
