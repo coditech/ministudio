@@ -1,28 +1,30 @@
-section{
-    /* min-width: 360px; */
+section {
+    background-color: ghostwhite;
 }
+
 h2 {
     font-size: 36px;
     text-align: center;
-    color :#000000;
-    font-family: 'Nunito', sans-serif;  
-    text-transform: uppercase;  
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-.border{
+
+.border {
     border-bottom: 3px solid black;
     margin: 0 48.5%
 }
-p{
+
+p {
     font-size: 16px;
     line-height: 1.6em;
     text-align: center;
     color: #000000;
-    font-family: 'Nunito', sans-serif;    
-    
-
+    font-family: 'Nunito', sans-serif;
 }
-.par{
+
+.par {
     width: 46%;
     margin: 0 27%;
 }
