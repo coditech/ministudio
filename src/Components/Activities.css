@@ -1,5 +1,6 @@
-.row{
+.card{
     text-align: center;
+    margin-top: 10%;
 }
 svg{
     width: 5em;
@@ -7,4 +8,7 @@ svg{
 }
 .container{
     width: 100%;
+}
+.icon{
+    margin: 0 auto;
 }
