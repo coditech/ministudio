@@ -2,7 +2,7 @@ import React from 'react'
 import ContactUs from './ContactUs'
 import Navbar from './Navbar'
 import Section from './Section'
-import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap'
+// import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap'
 import './Activities.css'
 import  MdCake  from 'react-icons/lib/md/cake'
 

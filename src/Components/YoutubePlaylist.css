@@ -1,17 +1,21 @@
+body{
+    background: rgb(218, 209, 209)
+}
+
 .youtube-container{
-    max-width:960px;
-    margin:0 auto;
+    width: 815px; 
+    height: 1050px;  
+      margin:0 auto;
+    background-color: rgb(228, 221, 221);
+    
 }
 
 .youtube-player{
-    width:100%;
-    position: absolute;
-    height:100%;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    margin:0 auto;
+    width: 772.5px; 
+    height: 427.5px;
+    margin-left: 20px;
+    margin-top: 36px;
+    
 }
 
 .youtube-player-container{
@@ -23,7 +27,14 @@
 }
 
 .youtube-playlist-item{
-    width:10em;
+    border-radius: 5px;
+    font-size: 150%;
+    width:262px;
+    height:139px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* width:10em;
     padding:1em;
     margin:1em;
     overflow:hidden;
@@ -32,7 +43,7 @@
     float:left;
     height:13em;
     position: relative;
-    cursor: pointer;
+    cursor: pointer; */
 }
 
 .youtube-playlist-item::after{
@@ -41,8 +52,6 @@
     bottom:0;
     left:0;
     right:0;
-    height:1em;
-    background:linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
 .youtube-playlist-item img{
@@ -50,15 +59,16 @@
 }
 
 .youtube-item-current{
-    background:teal;
+
 }
-.youtube-playlist-item:hover{
-    background:blue;
-}
+
 
 .youtube-playlist-container{
     width:100%;
     display:flex;
     flex-wrap: wrap;
     clear:both;
+    margin-top:140px;
 }
+
+
