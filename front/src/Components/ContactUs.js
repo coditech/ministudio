@@ -27,7 +27,8 @@ class ContactUs extends Component {
       email: "",
       subject: "",
       message: "",
-      response: ""
+      response: "",
+      isSubmitted:false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -61,12 +62,15 @@ class ContactUs extends Component {
             name: "",
             email: "",
             subject: "",
-            message: ""
+            message: "",
+            isSubmitted:true
           })
         )
-        .then(alert("Your message was sent successfully."));
     } else {
-      alert("All fields are required!");
+      <div class="contact-alert error">
+        <span onClick={() => {this.setState({isSubmitted:false})}}class="closebtn">&times;</span>  
+        <strong>Error!</strong> Couldn't send the form
+      </div>
     }
   }
 
@@ -135,6 +139,12 @@ class ContactUs extends Component {
           <ContactUsPart>
             <ContactUsTitle text="CONTACT" />
             <ContactUsContent>
+            
+              {this.state.isSubmitted ? 
+                <div class="contact-alert">
+                  <span onClick={() => {this.setState({isSubmitted:false})}}class="closebtn">&times;</span>  <strong>Success!</strong> Contact Form Submitted
+                </div> : null 
+              }
               <form
                 onSubmit={this.handleSubmit}
                 className="flex full"
