@@ -1,27 +1,23 @@
 {
   "name": "ministudio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js",
+    "client": "cd front && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-    "masonry-layout": "^4.2.1",
-    "picnic": "^6.5.0",
-    "qs": "^6.5.2",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-google-maps": "^9.4.5",
-    "react-icons": "^2.2.7",
-    "react-image-gallery": "^0.8.7",
-    "react-masonry-component": "^6.2.0",
-    "react-responsive": "^4.1.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "node-mailer": "^0.1.1",
+    "nodemailer": "^4.6.4",
+    "qs": "^6.5.2"
   }
 }
